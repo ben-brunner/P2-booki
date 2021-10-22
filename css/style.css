@@ -15,7 +15,7 @@ p {
 h3 {
   padding: 0;
   margin: 0;
-  font-size: 17px;
+  font-size: 16px;
 }
 h1 {
   font-size: 26px;
@@ -33,6 +33,9 @@ a {
 }
 
 /* Utilities */
+.text-24 {
+  font-size: 24px;
+}
 .text-blue {
   color: var(--blue);
 }
@@ -53,6 +56,9 @@ a {
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .items-center {
   align-items: center;
@@ -121,7 +127,7 @@ nav {
 }
 
 #search-input {
-  width: 21%;
+  width: 20%;
   padding: 15px 15px;
   font-size: 18px;
   font-weight: 600;
@@ -233,7 +239,7 @@ main {
 
 #lodgings {
   width: 66.66%;
-  margin-right: 3%;
+  margin-right: 4%;
 }
 #popular {
   width: 33.33%;
@@ -243,25 +249,26 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 3%;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .card {
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   width: 32%;
-  max-height: 60%;
+  height: 230px;
   background: white;
   padding: 0.7%;
   border-radius: 20px;
+  box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
 }
 
-.card-img {
-  height: 55%;
-}
-div.card-img img {
-  height: 100%;
+div.card img {
+  min-height: 55%;
   width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -279,17 +286,19 @@ div.card-content > h3 {
 
 div.card-content > p {
   font-size: 14px;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 
 div.card-content > div {
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 3%;
 }
 
 .more {
   color: black;
   text-decoration: none;
   font-weight: 600;
+  margin-bottom: 50px;
 }
 
 /* MEDIA QUERIES */
@@ -306,6 +315,27 @@ div.card-content > div {
 
   .filters-pill {
     margin-bottom: 2%;
+  }
+
+  #lodgings-popular-container {
+    flex-direction: column-reverse;
+  }
+
+  #lodgings,
+  #popular {
+    background-color: var(--grey);
+    border-radius: 0px;
+    padding: 2% 3%;
+  }
+
+  #lodgings {
+    width: 100%;
+    margin-right: 0;
+    background: white;
+  }
+  #popular {
+    width: 100%;
+    margin-bottom: 4%;
   }
 }
 
