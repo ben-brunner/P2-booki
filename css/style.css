@@ -19,6 +19,9 @@ p,
 a {
   font-size: 18px;
 }
+a {
+  color: initial;
+}
 
 /* --- Project colors --- */
 :root {
@@ -31,23 +34,17 @@ a {
 .text-24 {
   font-size: 24px;
 }
-.text-blue {
-  color: var(--blue);
-}
-.text-light-blue {
-  color: var(--light-blue);
-}
 .text-grey {
   color: var(--grey);
+}
+.text-blue {
+  color: var(--blue);
 }
 .flex {
   display: flex;
 }
 .flex-col {
   flex-direction: column;
-}
-.flex-row {
-  flex-direction: row;
 }
 .justify-center {
   justify-content: center;
@@ -489,10 +486,10 @@ footer {
   background-color: var(--grey);
   padding-top: 50px !important;
   padding-bottom: 35px !important;
+  justify-content: space-between;
 }
 
 footer div {
-  margin-right: 250px;
   width: 20%;
 }
 
@@ -607,10 +604,6 @@ footer span {
   #frioul-card {
     height: auto;
   }
-
-  .md-2 {
-    margin-bottom: 50px;
-  }
 }
 
 /* For mobile: */
@@ -661,5 +654,15 @@ footer span {
 
   .card {
     height: 230px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer div {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
