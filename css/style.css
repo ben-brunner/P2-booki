@@ -76,7 +76,7 @@ nav {
 }
 
 #logo {
-  object-fit: contain;
+  object-fit: cover;
   margin-left: 15px;
   padding-top: 30px;
 }
@@ -89,6 +89,7 @@ nav {
   color: black;
   text-decoration: none;
   padding-top: 30px;
+  border-top: 2px solid transparent;
 }
 .nav-link:hover {
   color: var(--blue) !important;
@@ -279,8 +280,6 @@ main a {
   padding: 5px;
   border-radius: 20px;
   box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
 }
 .card:hover {
@@ -340,8 +339,6 @@ div.card-content > div {
   background: white;
   border-radius: 20px;
   box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 10px 8px 27px -14px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
 }
 .popular-card:hover {
@@ -419,8 +416,6 @@ div.popular-card-content > div {
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 5px 8px 40px -8px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 5px 8px 40px -8px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 5px 8px 40px -8px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
 }
 .activities-card:hover {
